@@ -57,9 +57,9 @@ public class demoDesktop {
                 caps.setCapability("platformName", "Big Sur");
                 caps.setCapability("browserName", "safari");
                 caps.setCapability("version", "latest");
-                caps.setCapability("fixedIP", fixedip);
+                caps.setCapability("fixedIP", System.getProperty("fixedIP"));
                 caps.setCapability("build", "Safari Automation Pop-up : Big Sur - Jenkins " + System.getProperty("BUILD_NUMBER"));
-                caps.setCapability("name", fixedip + " - Count : " + i);
+                caps.setCapability("name", System.getProperty("fixedIP") + " - Count : " + i);
 
 
                 StopWatch driverStart = new StopWatch();
