@@ -34,9 +34,10 @@ import java.util.concurrent.TimeUnit;
 
 public class demoDesktop {
 
-    public String username = System.getenv("LT_USERNAME");
-    public String accesskey = System.getenv("LT_ACCESS_KEY");
-    public String gridURL = "hub.lambdatest.com";
+    public String username = System.getProperty("LT_USERNAME");
+    public String accesskey = System.getProperty("LT_ACCESS_KEY");
+    public String gridURL = System.getProperty("GRID_URL");
+
     public RemoteWebDriver driver;
     String status;
     String hub;
