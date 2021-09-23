@@ -14,7 +14,7 @@
     </test>
 
 
-    <test name="2">
+<!--     <test name="2">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="latest"/>
         <parameter name="platform" value="Big Sur"/>
@@ -50,6 +50,6 @@
         <classes>
             <class name="demoDesktop" />
         </classes>
-    </test>
+    </test> -->
 
 </suite>
