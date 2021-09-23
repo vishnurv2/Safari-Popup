@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="DesktopBrowsers" parallel="tests">
+
+
+    <test name="1">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="90.0"/>
+        <parameter name="platform" value="Win10"/>
+        <parameter name="fixedip" value="10.242.32.145"/>
+        <classes>
+        <class name="demoDesktop" />
+        </classes>
+    </test>
+
+
+    <test name="2">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="Big Sur"/>
+        <parameter name="fixedip" value="10.242.32.146"/>
+        <classes>
+            <class name="demoDesktop" />
+        </classes>
+    </test>
+
+    <test name="3">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="Big Sur"/>
+        <parameter name="fixedip" value="10.242.32.147"/>
+        <classes>
+            <class name="demoDesktop" />
+        </classes>
+    </test>
+    <test name="4">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="Big Sur"/>
+        <parameter name="fixedip" value="10.242.32.148"/>
+        <classes>
+            <class name="demoDesktop" />
+        </classes>
+    </test>
+    <test name="5">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="Big Sur"/>
+        <parameter name="fixedip" value="10.242.32.150"/>
+        <classes>
+            <class name="demoDesktop" />
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,11 @@
+image: maven:3.3.9-jdk-8
+
+before_script:
+  - |
+    cd /builds/vishnukdas/LambdaDemo
+    export LT_USERNAME="vishnukdas"
+    export LT_ACCESS_KEY="D3tRgjqJOrG7GKCmdIkafAP7uUbPfiK3SaWXTWdjX3vhglk2yd"
+  
+job:
+  script:
+    mvn test -Dsurefire.suiteXmlFiles=desktop.xml
