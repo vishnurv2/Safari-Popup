@@ -58,7 +58,7 @@ public class demoDesktop {
                 caps.setCapability("browserName", "safari");
                 caps.setCapability("version", "latest");
                 caps.setCapability("fixedIP", fixedip);
-                caps.setCapability("build", "Safari Automation Pop-up : Big Sur");
+                caps.setCapability("build", "Safari Automation Pop-up : Big Sur - Jenkins " + System.getProperty("BUILD_NUMBER"));
                 caps.setCapability("name", fixedip + " - Count : " + i);
 
 
